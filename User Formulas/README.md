@@ -7,7 +7,7 @@ If you wish to submit a formula, please make a pull request to put it here.
 
 **Rules for Uploading Formulas:**
 
-1. The number being computed needs to be resonably interesting.
+1. The number being computed needs to be reasonably interesting.
 2. The file needs to have an appropriate description of what it is.
 3. If you didn't come up with the formula yourself, you must cite/reference the original author/discoverer.
 4. The formula must not already exist in this repo - unless it is a significant modification or optimization.
