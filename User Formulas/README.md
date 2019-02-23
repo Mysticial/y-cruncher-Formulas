@@ -27,5 +27,5 @@ Use of other languages in the comment descriptions are allowed as long as they a
 5. The formula needs to be well-optimized. No stuff like, `{Multiply : [2 3 5 7 11 ...]}`
 6. The formula needs to be correct for all precisions. Approximations that are only good for a certain precision are not allowed.
 
-I reserve the right to edit file and formulas.
+I reserve the right to edit the files and formulas.
 In particular, I may add notices to clarify if different formulas for the same constant are sufficiently different for compute+verify.
