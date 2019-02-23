@@ -24,7 +24,7 @@ Likewise, I may decide to kick things out of the official list if they become ou
 3. The formula itself needs to be well-formatted. No tabs allowed.
 4. All the fields in the formula (`NameShort`, `NameLong`, `AlgorithmShort`, `AlgorithmLong`, etc...) need to be English readable and use only characters that have fonts on English console locales on Windows.
 Use of other languages in the comment descriptions are allowed as long as they are appropriate and verifiable via a translator.
-5. The formula needs to be well-optimized. No stuff like, `{Multiply : [2 3 5 7 11 ...]}`
+5. The formula needs to be well-optimized.
 6. The formula needs to be correct for all precisions. Approximations that are only good for a certain precision are not allowed.
 
 I reserve the right to edit the files and formulas.
