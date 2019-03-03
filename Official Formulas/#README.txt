@@ -217,7 +217,7 @@ Dependent Set:
 
 Zeta(2):
 
-Fastest Pair: none
+Fastest Pair:
     Zeta(2) - Chudnovsky.cfg
     Zeta(2) - Direct.cfg
 
