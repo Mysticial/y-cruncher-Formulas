@@ -44,10 +44,11 @@ Catalan's Constant:
 
 Fastest Pair:
     Catalan - Pilehrood (short).cfg
-    Catalan - Pilehrood (long).cfg
+    Catalan - Guillera (2019).cfg
 
-This constant is supported natively in y-cruncher. So it's faster to use the
-built-in implementations instead.
+"Pilehrood (short)" is supported natively in y-cruncher. So it's faster to use
+the built-in implementation instead. "Guillera (2019)" is new and is not yet
+supported natively in y-cruncher yet.
 
 Dependent Set:
     Catalan - Huvent (combined).cfg
