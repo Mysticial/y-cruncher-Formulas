@@ -40,15 +40,37 @@ that constant and are rearranged in a way to avoid any computational dependencie
 
 --------------------------------------------------------------------------------
 
+2^(1/5):
+
+Fastest Pair:
+    2^(1d5) - Native.cfg
+    2^(1d5) - Series.cfg
+
+The series formula is very slow. Instead, just compute: 200000^(1/5).
+The digits will be the same, but shifted over by 1.
+
+--------------------------------------------------------------------------------
+
+2^(1/7):
+
+Fastest Pair:
+    2^(1d7) - Native.cfg
+    2^(1d7) - Series.cfg
+
+The series formula is very slow. Instead, just compute: 20000000^(1/7).
+The digits will be the same, but shifted over by 1.
+
+
+--------------------------------------------------------------------------------
+
 Catalan's Constant:
 
 Fastest Pair:
     Catalan - Pilehrood (short).cfg
     Catalan - Guillera (2019).cfg
 
-"Pilehrood (short)" is supported natively in y-cruncher. So it's faster to use
-the built-in implementation instead. "Guillera (2019)" is new and is not yet
-supported natively in y-cruncher yet.
+This constant is supported natively in y-cruncher. So it's faster to use the
+built-in implementations instead.
 
 Dependent Set:
     Catalan - Huvent (combined).cfg
@@ -58,6 +80,30 @@ Dependent Set:
 Dependent Set:
     Catalan - Ramanujan (unoptimized).cfg
     Catalan - Ramanujan.cfg
+
+
+--------------------------------------------------------------------------------
+
+Cbrt(2):
+
+Fastest Pair:
+ -  Cbrt(2) - Native.cfg
+ -  Cbrt(2) - Series2.cfg
+
+The series formula is very slow. Instead, just compute: 2000^(1/3).
+The digits will be the same, but shifted over by 1.
+
+
+--------------------------------------------------------------------------------
+
+Cbrt(3):
+
+Fastest Pair:
+ -  Cbrt(3) - Native.cfg
+ -  Cbrt(3) - Series.cfg
+
+The series formula is very slow. Instead, just compute: 3000^(1/3).
+The digits will be the same, but shifted over by 1.
 
 
 --------------------------------------------------------------------------------
@@ -87,6 +133,18 @@ Dependent Set:
 
 --------------------------------------------------------------------------------
 
+Gamma(1/3):
+
+Fastest Pair:
+    Gamma(1d3) - Series-Pi
+    Gamma(1d3) - AGM-Pi
+
+These two formulas have the same relative dependency on Pi. Therefore Pi is set
+to use two different algorithms.
+
+
+--------------------------------------------------------------------------------
+
 Gamma(1/4):
 
 Fastest Pair:
@@ -99,11 +157,47 @@ to use two different algorithms.
 
 --------------------------------------------------------------------------------
 
+Gamma(1/6):
+
+Fastest Pair:
+    Gamma(1d6) - Series-Pi.cfg
+    Gamma(1d6) - AGM-Pi.cfg
+
+These two formulas have the same relative dependency on Pi. Therefore Pi is set
+to use two different algorithms.
+
+
+--------------------------------------------------------------------------------
+
+Gamma(2/3):
+
+Fastest Pair:
+    Gamma(2d3) - Series-Pi
+    Gamma(2d3) - AGM-Pi
+
+These two formulas have the same relative dependency on Pi. Therefore Pi is set
+to use two different algorithms.
+
+
+--------------------------------------------------------------------------------
+
 Gamma(3/4):
 
 Fastest Pair:
     Gamma(3d4) - AGM-Pi.cfg
     Gamma(3d4) - Series-Pi.cfg
+
+These two formulas have the same relative dependency on Pi. Therefore Pi is set
+to use two different algorithms.
+
+
+--------------------------------------------------------------------------------
+
+Gamma(5/6):
+
+Fastest Pair:
+    Gamma(2d3) - Series-Pi.cfg
+    Gamma(2d3) - AGM-Pi.cfg
 
 These two formulas have the same relative dependency on Pi. Therefore Pi is set
 to use two different algorithms.
@@ -141,7 +235,7 @@ Fastest Pair:
     Lemniscate - Series-Pi.cfg
 
 This is a built-in constant. But the 2nd formula here (Series-Pi) is actually
-faster than the 2nd and 3rd built-in formulas.
+faster than both the built-in ArcSinlemn formulas.
 
 These two formulas have the same relative dependency on Pi. Therefore Pi is set
 to use two different algorithms.
