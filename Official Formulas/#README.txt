@@ -349,26 +349,13 @@ to use two different algorithms.
 Zeta(5):
 
 Fastest Pair:
-    Zeta(5) - Broadhurst (optimized).cfg
-    Zeta(5) - Broadhurst.cfg
-
-This is one of those tough-to-call cases. Both formulas are mathematically the
-same. But the optimized one has been rearranged to the point that it bares no
-resemblance to the original. Therefore, it is likely to be computationally
-independent enough to qualify as a compute/verify pair.
-
-In the end, this is very unsatisfying. But as of this writing, there is no
-other known formula for Zeta(5) that runs in quasi-linear time and can be
-implemented using y-cruncher's functionality.
-
-
-Dependent Set:
-    Zeta(5) - Broadhurst (Huvent 2006).cfg
+    Zeta(5) - BBP-Kruse.cfg
     Zeta(5) - Broadhurst (optimized).cfg
 
 Dependent Set:
-    Zeta(5) - Broadhurst (Huvent 2006).cfg
     Zeta(5) - Broadhurst.cfg
+    Zeta(5) - Broadhurst (Huvent 2006).cfg
+    Zeta(5) - Broadhurst (optimized).cfg
 
 
 
