@@ -67,7 +67,7 @@ Catalan's Constant:
 
 Fastest Pair:
     Catalan - Pilehrood (short).cfg
-    Catalan - Guillera (2019).cfg
+    Catalan - Zuniga (2023).cfg
 
 This constant is supported natively in y-cruncher. So it's faster to use the
 built-in implementations instead.
@@ -325,8 +325,8 @@ to use two different algorithms.
 Zeta(3):
 
 Fastest Pair:
-    Zeta(3) - Wedeniwski.cfg
-    Zeta(3) - Amdeberhan-Zeilberger.cfg
+    Zeta(3) - Zuniga (2023-vi).cfg
+    Zeta(3) - Zuniga (2023-v).cfg
 
 This constant is supported natively in y-cruncher. So it's faster to use the
 built-in implementations instead.
