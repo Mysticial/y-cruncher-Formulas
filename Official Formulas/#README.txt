@@ -81,6 +81,9 @@ Dependent Set:
     Catalan - Ramanujan (unoptimized).cfg
     Catalan - Ramanujan.cfg
 
+Dependent Set:
+    Catalan - Pilehrood (short).cfg
+    Catalan - Pilehrood (short G3).cfg
 
 --------------------------------------------------------------------------------
 
@@ -231,14 +234,19 @@ digits will be shifted over by one.
 Lemniscate:
 
 Fastest Pair:
-    Lemniscate - AGM-Pi.cfg
-    Lemniscate - Series-Pi.cfg
+    Lemniscate - Zuniga (2023-viii).cfg
+    Lemniscate - Zuniga (2023-vii).cfg
 
-This is a built-in constant. But the 2nd formula here (Series-Pi) is actually
-faster than both the built-in ArcSinlemn formulas.
+This is a built-in constant. AGM may be faster for large in-memory computations,
+but has very poor locality and is much slower when running on disk.
 
-These two formulas have the same relative dependency on Pi. Therefore Pi is set
-to use two different algorithms.
+Dependent Set:
+    Lemniscate - Zuniga (2023-iii).cfg
+    Lemniscate - Zuniga (2023-iii) (G2).cfg
+
+Dependent Set:
+    Lemniscate - Zuniga (2023-vi).cfg
+    Lemniscate - Zuniga (2023-vi) (G2).cfg
 
 
 --------------------------------------------------------------------------------
@@ -331,6 +339,9 @@ Fastest Pair:
 This constant is supported natively in y-cruncher. So it's faster to use the
 built-in implementations instead.
 
+Dependent Set:
+    Zeta(3) - Wedeniwski.cfg
+    Zeta(3) - Wedeniwski (G2).cfg
 
 --------------------------------------------------------------------------------
 
@@ -349,8 +360,8 @@ to use two different algorithms.
 Zeta(5):
 
 Fastest Pair:
+    Zeta(5) - Y.Zhao.cfg
     Zeta(5) - BBP-Kruse.cfg
-    Zeta(5) - Broadhurst (optimized).cfg
 
 Dependent Set:
     Zeta(5) - Broadhurst.cfg
