@@ -3,7 +3,7 @@ This folder contains a set of custom formulas you can play with.
 Formulas can be loaded directly from the Custom Compute menu or entered from the
 command line as "custom:filename".
 
-    y-cruncher custom custom:"constant - algorithm"
+    y-cruncher custom custom:"filename.cfg"
 
 
 More formulas can be found here on the official GitHub repo:
@@ -36,6 +36,10 @@ constant were changed, both formulas will evaluate to the same (incorrect) value
 
 Formula pairs that fall into these category will use different algorithms for
 that constant and are rearranged in a way to avoid any computational dependencies.
+
+Formulas that are suffixed with a term like (G2) or (G3) means it is a term-wise
+expansion of the original formula. Therefore formulas that differ only by this
+are the same and cannot be used as compute+verify pairs.
 
 
 --------------------------------------------------------------------------------
@@ -139,15 +143,16 @@ Dependent Set:
 Gamma(1/3):
 
 Fastest Pair:
-    Gamma(1d3) - Zuniga (2023)
-    Gamma(1d3) - Series-Pi
+    Gamma(1d3) - Guillera (2023) (G2).cfg
+    Gamma(1d3) - Brown (2011).cfg
 
 These two formulas have the same relative dependency on Pi. Therefore Pi is set
 to use two different algorithms.
 
 Dependent Set:
-    Gamma(1d3) - Zuniga (2023)
-    Gamma(1d3) - AGM-Pi
+    Gamma(1d3) - Guillera (2023).cfg
+    Gamma(1d3) - Zuniga (2024).cfg
+
 
 --------------------------------------------------------------------------------
 
@@ -247,16 +252,8 @@ Fastest Pair:
     Lemniscate - Zuniga (2023-x)
     Lemniscate - Guillera
 
-This is a built-in constant. AGM may be faster for large in-memory computations,
-but has very poor locality and is much slower when running on disk.
-
-Dependent Set:
-    Lemniscate - Zuniga (2023-iii)
-    Lemniscate - Zuniga (2023-iii) (G2)
-
-Dependent Set:
-    Lemniscate - Zuniga (2023-vi)
-    Lemniscate - Zuniga (2023-vi) (G2)
+Many of the formulas that use Pi have the same relative dependency on Pi. The
+full list of which formulas are dependent has not been enumerated.
 
 
 --------------------------------------------------------------------------------
@@ -348,10 +345,6 @@ Fastest Pair:
 
 This constant is supported natively in y-cruncher. So it's faster to use the
 built-in implementations instead.
-
-Dependent Set:
-    Zeta(3) - Wedeniwski
-    Zeta(3) - Wedeniwski (G2)
 
 --------------------------------------------------------------------------------
 
